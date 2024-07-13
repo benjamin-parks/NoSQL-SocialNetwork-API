@@ -22,7 +22,7 @@ To get a single thought, go to `http://localhost:3001/api/thoughts/:thoughtId`
 - PUTting to this will allow you to update a thought. 
 -DELETEing on this route will remove the thought from the database. 
 
-To add a reaction (reply) to a thought, go to ``http://localhost:3001/api/:thoughtId/reactions` with a POST request.
+To add a reaction (reply) to a thought, go to `http://localhost:3001/api/:thoughtId/reactions` with a POST request.
 
 
 The schema stays the same for the users, except they are from the `http://localhost:3001/api/users` routes intsead. 
