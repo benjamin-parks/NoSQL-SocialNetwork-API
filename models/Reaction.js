@@ -1,29 +1,29 @@
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-
-const reactionSchema = new Schema(
-    {
-        reactionBody: {
-            type: String,
-            required: true,
-            minlength: 1,
-            maxlength: 280
-        },
-        username: {
-            type: String,
-            required: true
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now,
-            get: (timestamp) => dateFormat(timestamp)
-        }
+const ReactionSchema = new Schema({
+    reactionBody: {
+        type: String,
+        required: 'Must provide a thought.',
+        minlength: 1,
+        maxlength: 280
     },
-    {
-        toJSON: {
-            getters: true
-        },
-        id: false
-    }
+    username: {
+        type: String,
+        required: 'Must provide a username.'
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+},
+{
+    toJSON: {
+        virtuals: true,
+        getters: true
+    },
+    id: false
+});
 
-);
+const Reaction = model('Reaction', ReactionSchema);
+
+module.exports = Reaction;
