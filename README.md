@@ -29,4 +29,4 @@ The schema stays the same for the users, except they are from the `http://localh
 
 
 ## Video Walkthrough
-[Watch the video]('/assets/API_Demo.mp4')
+[Watch the video](/assets/API_Demo.mp4)
