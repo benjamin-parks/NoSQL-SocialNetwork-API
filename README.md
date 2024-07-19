@@ -26,3 +26,7 @@ To add a reaction (reply) to a thought, go to `http://localhost:3001/api/:though
 
 
 The schema stays the same for the users, except they are from the `http://localhost:3001/api/users` routes intsead. 
+
+
+## Video Walkthrough
+[Watch the video]('./assets/API_Demo.mp4)
